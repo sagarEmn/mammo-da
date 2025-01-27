@@ -76,3 +76,16 @@ def y_intercept(x,y):
     y=mean(y)-correlation(x,y)*mean(x)
     print("The y intercept of the data is {}".format(y))
     return y
+
+def rawnmoment(x,A,n):
+    ans =0
+    
+    for i in x:
+        ans+=(i-A)**n
+        
+    return ans/len(x)
+
+
+
+
+
